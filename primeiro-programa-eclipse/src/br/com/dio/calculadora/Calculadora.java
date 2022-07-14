@@ -7,16 +7,16 @@ public class Calculadora {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		float a, b;
+		int a, b;
 		
 		System.out.println("Digite o primeiro valor: ");		
 		a = scan.nextInt();
 		System.out.println("Digite o segundo valor: ");
 		b = scan.nextInt();
 		
-		float soma = soma(a,b);
-		float subtracao = subtracao(a,b);
-		float multiplicacao = multiplicacao(a,b);
+		int soma = soma(a,b);
+		int subtracao = subtracao(a,b);
+		int multiplicacao = multiplicacao(a,b);
 		float divisao = divisao(a,b);
 		
 		System.out.println(soma);
@@ -26,20 +26,20 @@ public class Calculadora {
 				
 	}
 	
-	public static float soma(float a, float b) {
+	public static int soma(int a, int b) {
 		return a + b;
 	}
 	
-	public static float subtracao(float a, float b) {
+	public static int subtracao(int a, int b) {
 		return a - b;
+	}
+	
+	public static int multiplicacao(int a, int b) {
+		return a * b;
 	}
 	
 	public static float divisao(float a, float b) {
 		return a / b;
 	}
 	
-	public static float multiplicacao(float a, float b) {
-		return a * b;
-	}
-
 }
